@@ -131,7 +131,7 @@ define(['N/search', 'N/record', 'N/format'],
                 searchResults = objSearch.run();
                 searchResults.forEach(function (searchResult) {
                     record.delete({
-                        type: netSuiteIds.records.priceEffectiveDate.id,
+                        type: 'priceEffectiveDate',
                         id: searchResult.id
                     });
                 });
